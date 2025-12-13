@@ -326,46 +326,63 @@
                 <p class="text-gray-400 text-sm">Fill out the form below and we'll connect.</p>
             </div>
 
-            <form action="mailto:contact.sasaone@gmail.com" method="post" enctype="text/plain" class="space-y-4">
-                
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">Name <span class="text-red-500">*</span></label>
-                    <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="Your Name">
-                </div>
+            <form
+  action="https://formspree.io/f/mrbnjraw"
+  method="POST"
+  class="space-y-4"
+>
+  <input type="hidden" name="_redirect" value="https://sasaone-dev.github.io/portfolio/">
+  <input type="hidden" name="_subject" value="New SASAOne Project Inquiry">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">Email <span class="text-red-500">*</span></label>
-                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="xyz@example.com">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">Phone <span class="text-red-500">*</span></label>
-                        <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="+91 9XXX XXXXXX">
-                    </div>
-                </div>
+  <div>
+    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">
+      Name <span class="text-red-500">*</span>
+    </label>
+    <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="Your Name">
+  </div>
 
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">Service Type <span class="text-red-500">*</span></label>
-                    <select name="service_type" required class="w-full px-4 py-3 rounded-xl form-input text-sm cursor-pointer">
-                        <option value="" disabled selected>Select a Service</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="Mobile App Development">Mobile App Development</option>
-                        <option value="AI & Automation">AI & Automation</option>
-                        <option value="IT Consulting">IT Consulting</option>
-                        <option value="White Label Partnership">White Label Partnership</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">
+        Email <span class="text-red-500">*</span>
+      </label>
+      <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="xyz@example.com">
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">
+        Phone <span class="text-red-500">*</span>
+      </label>
+      <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="+91 9XXX XXXXXX">
+    </div>
+  </div>
 
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">Project Details</label>
-                    <textarea name="details" rows="3" class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="Tell us about your project..."></textarea>
-                </div>
+  <div>
+    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">
+      Service Type <span class="text-red-500">*</span>
+    </label>
+    <select name="service_type" required class="w-full px-4 py-3 rounded-xl form-input text-sm cursor-pointer">
+      <option value="" disabled selected>Select a Service</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Mobile App Development">Mobile App Development</option>
+      <option value="AI & Automation">AI & Automation</option>
+      <option value="IT Consulting">IT Consulting</option>
+      <option value="White Label Partnership">White Label Partnership</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
 
-                <button type="submit" class="w-full btn-primary py-3 rounded-xl font-bold mt-2 hover:shadow-lg hover:shadow-white/10 transition-all cursor-pointer">
-                    Submit Request
-                </button>
-            </form>
+  <div>
+    <label class="block text-sm font-medium text-gray-300 mb-1 ml-1">
+      Project Details
+    </label>
+    <textarea name="details" rows="3" class="w-full px-4 py-3 rounded-xl form-input text-sm" placeholder="Tell us about your project..."></textarea>
+  </div>
+
+  <button type="submit" class="w-full btn-primary py-3 rounded-xl font-bold mt-2 hover:shadow-lg hover:shadow-white/10 transition-all cursor-pointer">
+    Submit Request
+  </button>
+</form>
+
         </div>
     </div>
 
